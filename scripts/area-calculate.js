@@ -65,6 +65,6 @@ document.getElementById('ellipse-btn-calculate').addEventListener('click',functi
     const yAxis = getInputValue('y-field');
 
     const eclipse = 3.14 * xAxis * yAxis;
-
-    setTextFieldValue('ellipse-area',eclipse);
+    const eclipseToFixed = eclipse.toFixed(2);
+    setTextFieldValue('ellipse-area',eclipseToFixed);
 });
