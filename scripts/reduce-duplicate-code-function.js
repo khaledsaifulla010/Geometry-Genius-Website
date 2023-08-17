@@ -14,3 +14,5 @@ function setTextFieldValue (elementId,area){
     const element = document.getElementById(elementId);
     element.innerText = area;
 }
+
+
