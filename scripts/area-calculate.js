@@ -18,6 +18,9 @@ document.getElementById('triangle-btn-calculate').addEventListener('click', func
     setTextFieldValue('triangle-area', baseAndHeight);
 
 
+    //add to calculation entry
+    addToCalculationEntry('Triangle',baseAndHeight);
+
 
 });
 
@@ -37,6 +40,9 @@ document.getElementById('rectangle-btn-calculate').addEventListener('click', fun
         return;
     }
     setTextFieldValue('rectangle-area', widthAndLength);
+
+    //add to calculation entry
+    addToCalculationEntry('Rectangle',widthAndLength);
 });
 
 //parallelogram area
@@ -53,7 +59,10 @@ document.getElementById('parallelogram-btn-calculate').addEventListener('click',
         return;
     }
 
-    setTextFieldValue('parallelogram-area', base2AndHeight2)
+    setTextFieldValue('parallelogram-area', base2AndHeight2);
+
+    //add to calculation entry
+    addToCalculationEntry('Parallelogram',base2AndHeight2);
 
 });
 
@@ -72,6 +81,9 @@ document.getElementById('rhombus-btn-calculate').addEventListener('click', funct
     }
 
     setTextFieldValue('rhombus-area', rhombus);
+
+    //add to calculation entry
+    addToCalculationEntry('Rhombus',rhombus);
 });
 
 //pentagon area
@@ -87,6 +99,9 @@ document.getElementById('pentagon-btn-calculate').addEventListener('click', func
         return;
     }
     setTextFieldValue('pentagon-area', pentagon);
+
+    //add to calculation entry
+    addToCalculationEntry('Pentagon',pentagon);
 })
 
 //eclipse area
@@ -104,4 +119,7 @@ document.getElementById('ellipse-btn-calculate').addEventListener('click', funct
     }
 
     setTextFieldValue('ellipse-area', eclipseToFixed);
+
+    //add to calculation entry
+    addToCalculationEntry('Eclipse',eclipseToFixed);
 });
